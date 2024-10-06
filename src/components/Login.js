@@ -6,7 +6,7 @@ const Login = (props) => {
     const [credentials, setCredentials] = useState({email: "" , password: ""})
     let navigate = useNavigate();
 
-     const host = "https://notexbackend-3.onrender.com"
+     const host = "https://notexbackend.onrender.com"
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const response = await fetch(`${host}/api/auth/login`,{
